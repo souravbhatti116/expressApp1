@@ -23,8 +23,18 @@ https.request(url[, options][, calback])
 //Git and GitHub
 
 Commands -  
-1.git init -  creates .git file
-2.git status - check the status of files in the staging area in the directory: tracked vs untracked changes.
-3.git add - bring the file/files to the staging area.
+// For local repos
+1. git init -  creates .git file
+2. git status - check the status of files in the staging area in the directory: tracked vs untracked changes.
+3. git add - bring the file/files to the staging area. For all files in a folder ( git add .), for single or multiple files ( git add file1 file2 etc.)
 4. git commit - keep the track of the changes during each commit. (-m "message for the changes.")
 5. git log - shows the list of the commits made during the progress of the file.
+6. git checkout - to revert the commits to the initial stage. 
+** working directory =>(git add)=> staging area => (git commit) => local repo.
+
+// For remote repos on github.
+7. git remote add origin  <url of the repo> - to add the local repo to the staging area for the the remote repo.
+8. git push -u origin master - push the local repo to the remote repo.
+9. git branch -M main - creates the new branches for upload.
+
+** working directory =>(git add)=> staging area => (git commit) => local repo. => (git push) => remote repo.
