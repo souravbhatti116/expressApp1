@@ -30,6 +30,7 @@ Commands -
 4. git commit - keep the track of the changes during each commit. (-m "message for the changes.")
 5. git log - shows the list of the commits made during the progress of the file.
 6. git checkout - to revert the commits to the initial stage. 
+** git rm --cached -r = unstage items from the git staging area.
 ** working directory =>(git add)=> staging area => (git commit) => local repo.
 
 // For remote repos on github.
@@ -38,3 +39,8 @@ Commands -
 9. git branch -M main - creates the new branches for upload.
 
 ** working directory =>(git add)=> staging area => (git commit) => local repo. => (git push) => remote repo.
+
+
+GitIgnore file - to ignore the classified files while pushing to the remote repo. (the files you dont want to be on the internet eg. API Keys etc.)
+
+11. ni .gitignore - creates .gitignore file 
