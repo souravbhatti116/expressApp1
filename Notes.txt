@@ -36,7 +36,9 @@ Commands -
 // For remote repos on github.
 7. git remote add origin  <url of the repo> - to add the local repo to the staging area for the the remote repo.
 8. git push -u origin master - push the local repo to the remote repo.
-9. git branch -M main - creates the new branches for upload.
+9. git branch -M main -  uploads to the main branch.
+10. git branch - creates the new branches for upload.
+11. git checkout branchname - Switch to different branch.
 
 Steps 7,8,9 are one time se=t
 
@@ -45,4 +47,8 @@ Steps 7,8,9 are one time se=t
 
 GitIgnore file - to ignore the classified files while pushing to the remote repo. (the files you dont want to be on the internet eg. API Keys etc.)
 
-11. ni .gitignore - creates .gitignore file 
+12. ni .gitignore - creates .gitignore file 
+
+// Branches and Merging 
+
+
