@@ -38,6 +38,8 @@ Commands -
 8. git push -u origin master - push the local repo to the remote repo.
 9. git branch -M main - creates the new branches for upload.
 
+Steps 7,8,9 are one time se=t
+
 ** working directory =>(git add)=> staging area => (git commit) => local repo. => (git push) => remote repo.
 
 
