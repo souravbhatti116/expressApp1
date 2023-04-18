@@ -1,0 +1,30 @@
+# Important concepts of API.
+
+1. Endpoint   
+2. Path        
+3. parameters (comes after ? symbol and seperated by & sign )
+4. Authentication -
+
+//
+url =  'https://api.openweathermap.org/data/2.5/weather?zip=95132&appid=868fcdbfa624bd1a03c5daed99704840&units=imperial';
+
+Open Weather map Key - 868fcdbfa624bd1a03c5daed99704840;
+\\
+
+JSON.parse - 
+
+JSON.stringyfy - converts JSON Object to a string.
+
+https.request(url[, options][, calback])
+
+//** Mailchimp API Key - 8b92a8d6d3e26bbaebf965e091fa1acf-us14
+//** Mailchimp unique ID - 021a135d8d
+
+//Git and GitHub
+
+Commands -  
+1.git init -  creates .git file
+2.git status - check the status of files in the staging area in the directory: tracked vs untracked changes.
+3.git add - bring the file/files to the staging area.
+4. git commit - keep the track of the changes during each commit. (-m "message for the changes.")
+5. git log - shows the list of the commits made during the progress of the file.

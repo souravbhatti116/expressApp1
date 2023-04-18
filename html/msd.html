@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/msd.css">
+    <title>Milestone Duplicate Finder</title>
+</head>
+<body>       
+    <div class="header">
+        <h1  class="animate__animated animate__fadeInDown"> Milestone Duplicate Check</h1><br>
+        <input type="text" id="msQr" placeholder="Enter Qr Code here."  autofocus = 'autofocus'required><br>
+        <br>
+        <input type="file" name="" id="csvFile" accept=".csv">
+        <input class ="btn btn-primary btn-sm" type="submit" value="Upload Csv" id="uploadCsv" onclick="uploadCsv()"><br>
+        <br><button class="btn btn-outline-secondary" onclick="downloadCsv()">Download Unique QR codes Csv</button>
+    </div>
+    
+    <div class="container animate__animated animate__fadeInDown">
+        <div class="row">
+            <div class="col">
+                <table id="Good" class="table table-bordered table-striped table-dark">
+                    <thead>
+                        <th  style="background-color: green; color: black;">Uniques - #<span id="goodCount"> </span></th>
+                    </thead>
+                    <tbody class="uniques"></tbody>
+                </table>
+            </div>
+
+        
+            <div class="col">
+                <table id ="Duplicates" class="table table-bordered table-striped table-dark">
+                    <thead>
+                        <th style="background-color: rgb(216, 63, 63); color: black;">Duplicates - #<span id="duplicateCount"> </span></th>   
+                    </thead>
+                    <tbody class="duplicates"></tbody>
+                </table>
+            </div>
+            
+
+        </div>
+    </div>
+    
+        
+    
+       
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.js" integrity="sha512-2ypsPur7qcA+2JjmmIJR1c4GWFqTLIe1naXXplraMg0aWyTOyAMpOk+QL+ULpzwrO/GdwA3qB3FhVyyiR8gdhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/msd.js"></script> 
+    
+   
+</body>
+</html>

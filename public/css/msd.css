@@ -1,0 +1,53 @@
+.header{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+body{
+    /* margin: 5%; */
+    background-color: #151515;
+    color: aliceblue;
+}
+
+.container{
+   display: flex;
+   justify-content: space-around;
+}
+#msdBtn1{
+    margin-top: 15px;
+}
+
+.table{
+    border: 3px solid aliceblue;
+    border-radius: 20px;
+    width: 25rem;
+
+}
+.table th{
+    text-align: center;
+    background-color: beige;
+    color: #151515;
+    
+}
+#Duplicates tbody{
+    text-align: center;
+    
+}
+
+
+.col {
+    overflow: auto;
+    height: 800px;
+}
+
+.col thead th{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
